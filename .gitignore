@@ -1,2 +1,7 @@
 node_modules
 csv
+
+# Freebase to wikidata missing id checker script
+tools/fb2w_missing_id/fb2w.nt
+tools/fb2w_missing_id/missing.json
+tools/fb2w_missing_id/mapping.json
