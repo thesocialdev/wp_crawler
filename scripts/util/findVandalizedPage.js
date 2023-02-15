@@ -1,6 +1,6 @@
 const fs = require("fs")
-const { run } = require("../lib/script-utils").default
-const { querySearch } = require("../lib/search").default
+const { run } = require("../../lib/script-utils").default
+const { querySearch } = require("../../lib/search").default
 const vandalizedFile = fs.readFileSync("../output/es-vandalism.json")
 console.log(vandalis)
 

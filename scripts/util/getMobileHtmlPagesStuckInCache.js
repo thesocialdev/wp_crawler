@@ -1,13 +1,13 @@
 const path = require('path');
 const fs = require('fs');
 const mkdirp = require('mkdirp');
-const { run } = require("../lib/script-utils").default
-const { querySearch } = require("../lib/search").default
+const { run } = require("../../lib/script-utils").default
+const { querySearch } = require("../../lib/search").default
 
 const saveToJSON = (objectToSave, dir = "", truncate = true) => {
     const outputDir = path.join(__dirname, `../output/${dir}`);
     // truncate file first
-    
+
     if (truncate) {
         fs.writeFileSync(path.join(outputDir, 'es-vandalism.json'), "");
     }
@@ -36,7 +36,7 @@ const recurseiveQueryAndSaveToFile = async ({ lang, project, params }, truncate 
             if (result?.continue) {
                 console.info(`[INFO] ticontinue ${result?.continue?.ticontinue}`)
                 return await recurseiveQueryAndSaveToFile({
-                    lang, 
+                    lang,
                     project,
                     params: {
                         ...params,

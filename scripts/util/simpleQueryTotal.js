@@ -1,6 +1,6 @@
 const request = require('request');
 const util = require('util');
-const allWikis = require("../lib/constants").allWikis;
+const allWikis = require("../../lib/constants").allWikis;
 // const allWikis = ["en"];
 const throttledRequest = require('throttled-request')(request);
 const throttleConfig = {

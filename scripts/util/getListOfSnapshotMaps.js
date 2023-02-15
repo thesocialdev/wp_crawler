@@ -1,10 +1,10 @@
 const mkdirp = require('mkdirp');
 const path = require('path');
 const fs = require('fs');
-const allWikis = require("../lib/constants").allWikis;
-const getHtmlPage = require("../lib/html").getHtmlPage;
-const getMapFramesLinks = require("../lib/maps").getMapFramesLinks;
-const search = require("../lib/search").search
+const allWikis = require("../../lib/constants").allWikis;
+const getHtmlPage = require("../../lib/html").getHtmlPage;
+const getMapFramesLinks = require("../../lib/maps").getMapFramesLinks;
+const search = require("../../lib/search").search
 const project = "wikipedia";
 
 const baseParams = {
